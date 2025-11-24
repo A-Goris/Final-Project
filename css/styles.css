@@ -293,9 +293,10 @@ gap: 1rem;
 
 @media (max-width: 750px) {
     .top-header {
-        flex-direction: column !important;
+        flex-direction: row !important;
         align-items: center !important;
-        justify-content: center !important;
+        justify-content: space-between !important;
+        width:100%;
         gap: 0.5rem;
         padding: 1rem;
         text-align: center;
@@ -303,8 +304,9 @@ gap: 1rem;
     }
 
     .logo {
-        margin-bottom: 0.5rem;
-        flex: none !important;
+      text-align: left;
+      margin-bottom: 0.5rem;
+     flex: 0 0 auto;
     }
 
     .logo img {
@@ -314,15 +316,17 @@ gap: 1rem;
 
     .contact-info {
         position: static !important;
-        right: auto !important;
-        text-align: center !important;
+        text-align: right !important;
         padding: 0.5em 0;
         font-size: 0.9rem;
-        flex: none;
+        flex: 1 0 auto;
     }
 
-    nav {
+    header nav {
         width: 100%;
+        display: flex;
+        justify-content: center;
+      
     }
 
     nav ul {
