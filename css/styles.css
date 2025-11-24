@@ -76,7 +76,9 @@ header {
 }
 .logo img {
     display:block;
-    height: 65px;          
+    max-height: 65px;         
+    max-width:40%;
+    height: auto; 
     width: auto;
 }
 .contact-info {
@@ -308,8 +310,10 @@ gap: 1rem;
     }
 
     .logo img {
+      max-width: 80%;
         max-height: 50px;
         width: auto;
+        height: auto;
     }
 
     .contact-info {
