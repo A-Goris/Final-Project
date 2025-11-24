@@ -293,87 +293,48 @@ gap: 1rem;
 
 @media (max-width: 750px) {
     .top-header {
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        width:100%;
-        gap: 0.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 1rem;
-        text-align: center;
-  
-    }
-
-    .logo {
-      text-align: left;
-      margin-bottom: 0.5rem;
-     flex: 0 0 auto;
+        gap: 0.5rem;
     }
 
     .logo img {
-      max-width: 90%;
+        max-width: 90%;
         height: auto;
     }
 
     .contact-info {
-        position: static !important;
-        text-align: right !important;
+        position: static;
+        text-align: center;
         padding: 0.5em 0;
         font-size: 0.9rem;
-        flex: 1 0 auto;
     }
 
     header nav {
         width: 100%;
-        display: flex;
-        justify-content: center;
-      
+        margin-top: 0.5rem;
     }
 
     nav ul {
-        flex-direction: row !important;
-        flex-wrap:wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
-        width:100%;
-        margin: 0.5rem 0 0 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    nav ul li {
-        width: auto;
-        text-align: center;
-        position: relative;
+        width: 100%;
     }
 
     nav ul li a {
-        display: block;
-        width: 100%;
-        padding: 0.5rem 0.8rem;
         font-size: 1.1rem;
+        padding: 0.5rem 1rem;
     }
 
-  
     nav ul li .dropdown {
-        display: none;
-        position:absolute;
-        top:100%;
+        position: relative;
+        top: 0;
         left: 0;
-        background-color: white;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        min-width: 120px;
-        z-index:5;
-    }
-
-    nav ul li:focus-within .dropdown,
-    nav ul li:active .dropdown {
-        display: block;
-    }
-
-    nav ul li .dropdown li {
-        width: 100%;
-        text-align:center;
-        padding: 0.5rem 0;
+        min-width: 100%;
+        box-shadow: none;
     }
 
     .hero {
@@ -396,16 +357,13 @@ gap: 1rem;
     .showcase-image {
         height: auto;
         width: 100%;
-        margin-top:1rem;
-        object-fit:cover;
-        border-radius:15px;
+        border-radius: 15px;
     }
 
     .showcase-text {
         margin-top: -1rem;
         padding: 1rem;
-        width:100%;
-        box-sizing:border-box;
+        width: 100%;
     }
 
     .showcase-text h2 {
@@ -436,4 +394,4 @@ gap: 1rem;
         display: block;
         margin: 0.5rem 0;
     }
-  }
+}
