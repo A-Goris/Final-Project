@@ -309,25 +309,30 @@ gap: 1rem;
         justify-content: center;
         padding: 0.5rem 1rem;
         text-align: center;
-    }
+        gap: 0.5rem;
+      }
 
     .logo img {
       max-height: 50px;
      width: auto;
     }
 
+    .logo, .contact-info {
+      text-align: center;
+     flex: none;
+    }
+
     .contact-info {
         position: static;
         right: 0;
-        text-align: center;
         padding: 0.5em 0;
         font-size: 0.9rem;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 15px;
-        margin-bottom: 0.5rem;
+        gap: 10px;
+        margin: 0.5rem 0 0 0;
         align-items: center;
     }
 
@@ -357,12 +362,14 @@ gap: 1rem;
         width: 100%;
         margin-top:1rem;
         object-fit:cover;
+        border-radius:15px;
     }
 
     .showcase-text {
         margin-top: -1rem;
         padding: 1rem;
         width:100%;
+        box-sizing:border-box;
     }
 
     .showcase-text h2 {
